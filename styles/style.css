@@ -37,11 +37,14 @@ hr {
   margin-top: 3px;
 }
 
-.players {
-  display: block grid-template-columns: repeat (3, 1fr);
-  grid-row-gap: 30px;
+.players{
 
-}
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px; 
+
+
+} 
 
 .player {
   display: flex;
@@ -60,8 +63,8 @@ hr {
 
 /* top blog styles */
 .blogs {
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  display: grid ;
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 26px;
 }
 
@@ -127,7 +130,7 @@ hr {
     Media Queries 
     -----------------*/
 /* mobile devices */
-@media only screen and (max-width:688px) {
+ @media only screen and (max-width:688px) {
   .container{
     width: 100%
   }
@@ -139,7 +142,7 @@ hr {
   } 
 }
 /* tablet devices */
-@media only screen and (min-width:688px) and(max-width:992px){
+ @media only screen and (min-width:688px) and(max-width:992px){
   .container{
     width: 100%
   }
@@ -148,5 +151,5 @@ hr {
   }
   .player, .blog{
     flex-direction: column;
-  } 
-}
+  }
+ }
